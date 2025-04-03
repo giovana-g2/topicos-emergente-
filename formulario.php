@@ -17,7 +17,7 @@
         }
         
         ?>
-      <br><br><form action="teste.php" method="post"> 
+      <br><br><form action="ex1.php" method="post"> 
         <input type="submit" value="voltar">
       </form>
     </body>
