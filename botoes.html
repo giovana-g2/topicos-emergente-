@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="mensagem">🌟 Bem-vindo! 🌟</h1>
+    <button onclick="changeText()">Mudar Texto</button>
+    <br>
+    <button onclick="changeBackgroundColor('lightcoral')">Cor 1 ❤️</button>
+    <button onclick="changeBackgroundColor('lightblue')">Cor 2 💙</button>
+    <button onclick="changeBackgroundColor('lightgreen')">Cor 3 💚</button>
+
+    <script>
+        function changeText() {
+            var message = document.getElementById('mensagem');
+            if (message.innerHTML === '🌟 Bem-vindo! 🌟') {
+                message.innerHTML = '🎉 Texto Mudado! 🎉';
+            } else {
+                message.innerHTML = '🌟 Bem-vindo! 🌟';
+            }
+        }
+
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        alert('👋 Olá! Seja bem-vindo à nossa página interativa! 🎈');
+    </script>
+
+</body>
+</html>
