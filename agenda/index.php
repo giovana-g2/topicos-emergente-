@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Contatos</h1>
-        <form action=index.php method= "post">
+        <form action=salva.php method= "post">
 
          Nome:<input type="text" name="nome">
         <br>
